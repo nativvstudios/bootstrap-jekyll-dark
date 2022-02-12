@@ -1,0 +1,68 @@
+@import "bootstrap/variables";
+
+.card {
+    border-radius: 1rem;
+    margin: 0 auto; /* Added */
+    margin-bottom: 25px; /* Added */
+    max-width: 800px;
+    background-color: var(--bs-like-gray);
+    color: var(--bs-light);
+    box-shadow: 0 3px 26px 0 rgba($color: #000000, $alpha: .20);
+
+
+}
+
+
+.col-lg {
+ .card-img {
+    margin: 0, auto;
+    height: 250px;
+    height: auto;
+    border-radius: 1rem;
+    padding: 0;
+
+    margin-bottom: 25px;
+    
+    img {
+        max-height: auto;
+        max-width:100%;
+        max-height:250px;
+        width: 100%;
+        height: auto;
+        border-radius: 1rem;
+        display: block;
+
+        
+    }
+    }
+}
+
+.navbar {
+    border-bottom: 2px solid #282c34;
+}
+
+.bg-light {
+    
+}
+
+.post-list {
+    margin: 0 auto;
+}
+
+a.card-title {
+    color: var(--bs-greyple);
+    margin-top: 10px;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: var(--bs-not-quite-black);
+        color: var(--bs-light);
+    }
+  }
+
+
+.footer {
+    background-color: var(--bs-not-quite-black);
+    color: var(--bs-light);
+}
