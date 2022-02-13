@@ -12,6 +12,38 @@
 
 }
 
+.px-3  {
+    h1 {
+        font-size: 4.5rem;
+        color: pink;
+    }
+
+    .btn-pink {
+        background-color: pink;
+        color: #fff;
+        font-style: normal;
+    } 
+    .btn-pink:hover {
+        opacity: .5;
+    }
+}
+
+
+.navbar-brand {
+    margin-left: 3.5em;
+}
+
+.nav-item {
+    margin-left: 5.0em;
+}
+
+.cover-container {
+    margin: 1em 0 2em 0;
+
+    .footerText {
+        color: pink;
+    }
+}
 
 .col-lg {
  .card-img {
@@ -31,6 +63,7 @@
         height: auto;
         border-radius: 1rem;
         display: block;
+        object-fit: cover;
 
         
     }
@@ -49,8 +82,14 @@
     margin: 0 auto;
 }
 
+.post-list-heading {
+    h2 {
+    color: pink;
+    }
+}
+
 a.card-title {
-    color: var(--bs-greyple);
+    color: pink;
     margin-top: 10px;
 }
 
@@ -66,3 +105,5 @@ a.card-title {
     background-color: var(--bs-not-quite-black);
     color: var(--bs-light);
 }
+
+.page-content {}
