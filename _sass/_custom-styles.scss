@@ -61,6 +61,8 @@
 
 .profile-picture {
     border-radius: 100%;
+    width: 80%;
+    max-width: 7.5em;
 }
 
 
@@ -104,4 +106,8 @@
 .footer {
     background-color: var(--bs-not-quite-black);
     color: var(--bs-light);
+
+    .footerNotess {
+        direction: rtl;
+    }
 }

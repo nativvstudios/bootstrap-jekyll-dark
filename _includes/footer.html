@@ -21,13 +21,15 @@
         </p>
       </div>
       <div class="col">
-        <p>{{ site.description | escape }}</p>
+        <p>{{ site.footerNotes | markdownify }}</p>
       </div>
     </div>
     {%- if site.bootstrap.social_links -%}
     <div class="row py-3">
       <div class="col">
-        {%- include social.html -%}
+        <p class="footerNotess" dir="rtl">
+          {%- include social.html -%}
+        </p>
       </div>
     </div>
     {%- endif -%}

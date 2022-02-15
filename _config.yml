@@ -1,11 +1,22 @@
 title: Whyherro
 author:
+  image: 'https://gitlab.com/uploads/-/system/user/avatar/887041/avatar.png?width=400'
   name: 'whyherro'
   email: 'whyherro@nativvstudios.com'
 description: >- # this means to ignore newlines until "baseurl:"
   My name is Landin, thanks for checking out my personal blog!
   Here is where I'll vent about life and stuff, maybe you'll find
   something useful :)
+
+footerNotes:
+  <div class="col">
+    <p class="footerNotess" dir="rtl">
+      Hosted by <a href='https://gitlab.com'>Gitlab</a> <br>
+      Base by <a href='https://github.com/jonaharagon/jekyll-bootstrap-theme'>Jonaharagon</a> <br>
+      Created by <a href='https://github.com/nativvstudios'>Nativvstudios</a>
+    </p>
+  </div>
+
 
 excerpts:
   # Displays or hides post excerpts from home layout post listing.
