@@ -10,14 +10,15 @@
   }
 
 
-/* Typography */
-.post-list-heading {
-    h2 {
-    color: pink;
+.navbar {
+    border-bottom: 2px solid #282c34;
+   .navbar-brand {
+    }
+    .nav-item {
+        margin-left: 3.0em;
     }
 }
 
-/* Layout */
 
 .cover-container {
     margin: 1em 0 2em 0;
@@ -39,32 +40,29 @@
         .btn-pink:hover {
             opacity: .5;
         }
+        
+        .profile-picture {
+            border-radius: 100%;
+            width: 80%;
+            max-width: 7.5em;
+            margin: 0 0 1rem 0;
+        }
+
     }
 }
 
 .post-list {
     margin: 0 auto;
+
+    .post-list-heading {
+        h2 {
+        color: pink;
+        }
+    }
 }
 
 
 /* Components */
-
-.navbar {
-    border-bottom: 2px solid #282c34;
-   .navbar-brand {
-        margin-left: 3.5em;
-    }
-    .nav-item {
-        margin-left: 5.0em;
-    }
-}
-
-.profile-picture {
-    border-radius: 100%;
-    width: 80%;
-    max-width: 7.5em;
-}
-
 
 
 .card {
@@ -75,6 +73,7 @@
     background-color: var(--bs-like-gray);
     color: var(--bs-light);
     box-shadow: 0 3px 26px 0 rgba($color: #000000, $alpha: .20);
+    transition: all 0.2s ease-in-out;
 
     a.card-title {
         color: pink;
@@ -87,9 +86,9 @@
         height: auto;
         border-radius: 1rem;
         padding: 0;
-    
+        position: relative;
         margin-bottom: 25px;
-            
+        
             img {
                 max-height: auto;
                 max-width:100%;
@@ -101,7 +100,13 @@
                 object-fit: cover;
             }
         }
+        
+    &:hover {
+        transform: scale(1.05);
+        box-shadow: 0 3px 26px 0 rgba($color: #000000, $alpha: .20);
+    }
 }
+
 
 .footer {
     background-color: var(--bs-not-quite-black);
