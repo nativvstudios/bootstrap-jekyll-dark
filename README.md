@@ -1,6 +1,6 @@
-# jekyll-bootstrap-theme
+# Base by 
+[Jonaharagon](https://github.com/jonaharagon/jekyll-bootstrap-template/generate)
 
-[![Gem Version](https://badge.fury.io/rb/jekyll-bootstrap-theme.svg)](https://badge.fury.io/rb/jekyll-bootstrap-theme)
 
 A basic but extensible Jekyll theme based on Bootstrap 5.
 
