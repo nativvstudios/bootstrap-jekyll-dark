@@ -4,7 +4,7 @@
 
 A basic but extensible Jekyll theme based on Bootstrap 5.
 
-[Theme preview](https://jonaharagon.github.io/jekyll-bootstrap-theme/) - **[One-Click Install (GitHub Pages)](https://github.com/jonaharagon/jekyll-bootstrap-template/generate)** - [RubyGems.org](https://rubygems.org/gems/jekyll-bootstrap-theme)
+[Theme preview](https://personal.nativvstudios.com) 
 
 ![Bootstrap theme preview](/screenshot.png)
 
