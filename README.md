@@ -1,72 +1,25 @@
-# jekyll-bootstrap-theme
+# Base by 
+[Jonaharagon](https://github.com/jonaharagon/jekyll-bootstrap-template/generate)
 
-[![Gem Version](https://badge.fury.io/rb/jekyll-bootstrap-theme.svg)](https://badge.fury.io/rb/jekyll-bootstrap-theme)
 
 A basic but extensible Jekyll theme based on Bootstrap 5.
 
-[Theme preview](https://jonaharagon.github.io/jekyll-bootstrap-theme/) - **[One-Click Install (GitHub Pages)](https://github.com/jonaharagon/jekyll-bootstrap-template/generate)** - [RubyGems.org](https://rubygems.org/gems/jekyll-bootstrap-theme)
+[Theme preview](https://personal.nativvstudios.com) 
 
 ![Bootstrap theme preview](/screenshot.png)
 
 ## Install
 
-If you are able to install custom Gems on your build server/web server, install via the **Gemfile** method described here. GitHub Pages users cannot install custom Gems, and must instead use the **Remote Theme** Jekyll plugin to use this theme.
+Download or fork the repo
+-Extract
+-Go into extracted directory and execute:
 
-### Gemfile
+    $ bundle exec jekyll serve
 
-Add this line to your `Gemfile`:
+Or with livereload:
 
-```ruby
-gem 'jekyll-bootstrap-theme'
-```
-
-And add this line to your site's `_config.yml`:
-
-```yaml
-theme: jekyll-bootstrap-theme
-```
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install jekyll-bootstrap-theme
-
-### Remote Theme (GitHub Pages)
-
-#### One-Click Install
-
-- **[Create Repository from Pre-Made Template](https://github.com/jonaharagon/jekyll-bootstrap-template/generate)**
-
-#### Manual Install
-
-GitHub Pages websites cannot use custom Gems. Instead, you can add this repository as a `remote_theme`:
-
-After making a Jekyll repo, add `gem "jekyll-remote-theme"` to the `:jekyll_plugins` group in your `Gemfile`, then run `bundle` to install the plugin:
-
-```ruby
-group :jekyll_plugins do
-  [...]
-  gem "jekyll-remote-theme"
-end
-```
-
-Add the following to your site's `_config.yml` to activate the plugin and select this theme:
-
-```yaml
-plugins:
-  - jekyll-remote-theme
-
-remote_theme: jonaharagon/jekyll-bootstrap-theme
-```
-
-Optionally, you can specify a [release](https://github.com/jonaharagon/jekyll-bootstrap-theme/releases), [branch](https://github.com/jonaharagon/jekyll-bootstrap-theme/branches), or [tag](https://github.com/jonaharagon/jekyll-bootstrap-theme/tags) to lock the theme version in place:
-
-```yaml
-remote_theme: jonaharagon/jekyll-bootstrap-theme@v0.1.0
-```
+    $ bundle exec jekyll serve --liveReload
+    
 
 ## Theme Contents
 
