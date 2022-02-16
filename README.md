@@ -1,5 +1,5 @@
 # Base by 
-[Jonaharagon](https://github.com/jonaharagon/jekyll-bootstrap-template/generate)
+[Jonaharagon](https://github.com/jonaharagon/jekyll-bootstrap-theme)
 
 
 A basic but extensible Jekyll theme based on Bootstrap 5.
