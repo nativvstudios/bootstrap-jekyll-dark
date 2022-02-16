@@ -1,12 +1,19 @@
-title: Whyherro
+title: Nativv Studios
 author:
   image: 'https://gitlab.com/uploads/-/system/user/avatar/887041/avatar.png?width=400'
-  name: 'whyherro'
+  name: 'Nativv Studios'
   email: 'whyherro@nativvstudios.com'
 description: >- # this means to ignore newlines until "baseurl:"
-  My name is Landin, thanks for checking out my personal blog!
+  My name is Nativvstudios, thanks for checking out my blog!
   Here is where I'll vent about life and stuff, maybe you'll find
   something useful :)
+
+navigation:
+- text: Home
+  url: "index.html"
+- text: About
+  url: "/about/"   
+
 
 footerNotes:
   <div class="col">

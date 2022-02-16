@@ -1,25 +1,43 @@
 <header>
+  
   {%- assign default_paths = site.pages | map: "path" -%}
   {%- assign page_paths = site.bootstrap.header_pages | default: default_paths -%}
   {%- assign titles_size = site.pages | map: 'title' | join: '' | size -%}
-  <nav class="navbar navbar-expand-lg navbar-dark">
+  <nav class="navbar navbar-dark bg-dark fixed-top">
     <div class="container">
       <a class="navbar-brand" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
       {%- if titles_size > 0 -%}
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          {%- for path in page_paths -%}
-          {%- assign my_page = site.pages | where: "path", path | first -%}
-          {%- if my_page.title -%}
-          <li class="nav-item">
-            <a class="nav-link {% if page.url == my_page.url %} active" aria-current="page{%- endif -%}" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
-          </li>
-          {%- endif -%}
-          {%- endfor -%}
-        </ul>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h1 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h1>
+          <button type="button" class="btn-close btn-close-white text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            {% for link in site.navigation %}
+            <li class="nav-item">
+              <a class="nav-link {% if page.url == my_page.url %} active" aria-current="page{% endif %}" href="{{ link.url }}">
+                <h4>
+                  {{link.text}}
+                </h4>
+              </a>
+            </li>
+            {%- endfor -%}
+          </ul>
+        </div>
+        
+        <div class="offcanvas-bottom">
+          <div class="container-fluid">
+            <p>
+                "You could put some sort of descriptor here, or something else. You can do what ever you like
+                cause at the end of the day, it's your website right?" - someone probably
+            </p>
+          </div>
+        </div>
+
       </div>
       {%- endif -%}
     </div>

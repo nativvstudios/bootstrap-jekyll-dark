@@ -11,12 +11,42 @@
 
 
 .navbar {
+    background-color: var(--bs-like-gray);
     border-bottom: 2px solid #282c34;
    .navbar-brand {
-       color: red;
+        color: white;
     }
     .nav-item {
-        margin-left: 3.0em;
+        margin: 0 0 0 0;
+    }
+
+    .offcanvas-title {
+        color: pink;
+    }
+
+    .offcanvas {
+        background-color: var(--bs-like-gray);
+
+        border-radius: 1rem 0 0 1rem;
+    }
+
+    .offcanvas-body {
+        display: flex;
+        flex-grow: 0;
+        padding: 0 0 0 1.3em;
+        overflow-y: visible;
+      }
+
+    .offcanvas-bottom {
+        height: auto;
+        border-top: 0;
+        border-bottom: 0;
+
+
+        display: flex;
+        flex-grow: 0;
+        padding: 0 0 0 1.3em;
+        overflow-y: visible;
     }
 }
 
