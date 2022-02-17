@@ -3,22 +3,12 @@
   <div class="container">
     <div class="row">
       <div class="col leftSide">
-        <p dir="rtl">
-          {%- if site.author %}
-          <ul class="contact-list list-unstyled">
-            {% if site.author.name -%}
-              <li class="p-name">{{ site.author.name | escape }}</li>
-            {% endif -%}
-            {% if site.author.email -%}
-
-              <li>
-                Send us an email! <br>
-                <a class="u-email" href="mailto:{{ site.author.email }}">{{ site.author.email }}</a>
-              </li>
-            {%- endif %}
-          </ul>
-          {%- endif %}
+        <p dir="ltr">
+            {{ site.author.name | escape }} <br>
+            Send us an email! <br>
+            <a class="u-email" href="mailto:{{ site.author.email }}">{{ site.author.email }}</a>
         </p>
+
       </div>
       <div class="col rightSide">
         <p dir="rtl">
@@ -29,9 +19,13 @@
       </div>
     </div>
     <div class="row py-3">
-      <div class="col">
+      <div class="col text-center">
         <p>
           {%- include social.html -%}
+          <a class="btn btn-orange text-white " href="{{ 'feed.xml' | relative_url }}">
+            <i class="bi bi-rss-fill"></i>
+            <span>Subscribe</span>
+          </a>
         </p>
       </div>
     </div>
