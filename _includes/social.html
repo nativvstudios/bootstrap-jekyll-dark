@@ -13,4 +13,10 @@
   {%- if social.whatsapp -%}<li class="list-inline-item"><a rel="me" class="link-secondary" href="{{ social.whatsapp }}"><i class="bi bi-whatsapp"role="img" aria-label="WhatsApp"></i></a></li>{%- endif -%}
   {%- if social.discord -%}<li class="list-inline-item"><a rel="me" class="link-secondary" href="{{ social.discord }}"><i class="bi bi-discord"role="img" aria-label="Discord"></i></a></li>{%- endif -%}
   {%- if social.slack -%}<li class="list-inline-item"><a rel="me" class="link-secondary" href="{{ social.slack }}"><i class="bi bi-slack"role="img" aria-label="Slack"></i></a></li>{%- endif -%}
+  <p class="feed-subscribe">
+    <a class="btn btn-orange text-white" href="{{ 'feed.xml' | relative_url }}">
+      <i class="bi bi-rss-fill"></i>
+      <span>Subscribe</span>
+    </a>
+  </p>
 </ul>

@@ -25,6 +25,8 @@
     }
 
     .offcanvas {
+        box-shadow: 20px 20px 50px 15px rgba($color: #000000, $alpha: .20);
+
         background-color: var(--bs-like-gray);
 
         border-radius: 1rem 0 0 1rem;
@@ -143,7 +145,17 @@
     background-color: var(--bs-not-quite-black);
     color: var(--bs-light);
 
-    .footerNotess {
-        direction: rtl;
+    .leftSide {
+        font-size: large;
+
+    }
+
+    .rightSide {
+        font-size: large;
+
+    }
+
+    .feed-subscribe {
+        margin-top: 1rem;
     }
 }
