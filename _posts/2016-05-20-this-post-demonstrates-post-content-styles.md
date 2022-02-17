@@ -1,6 +1,8 @@
 ---
 layout: post
 title: "This post demonstrates post content styles"
+img: https://picsum.photos/1280/720?random=4
+
 categories: junk
 author:
 - Bart Simpson
