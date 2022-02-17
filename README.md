@@ -4,11 +4,7 @@
 
 A basic but extensible Jekyll theme based on Bootstrap 5.
 
-<<<<<<< HEAD
-[Theme preview](https://www.nativvstudios.com/bootstrap-jekyll-dark/)
-=======
 [Theme preview](https://www.nativvstudios.com/bootstrap-jekyll-dark/) 
->>>>>>> 510c8cf8c37016c107429d2b3905da9fd0d275cd
 
 [Gitlab theme preview as navigation isn't showing on github pages for some reason](https://personal.nativvstudios.com) 
 
