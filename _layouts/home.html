@@ -16,7 +16,9 @@ layout: default
         {{ site.description }}
       </p>
       <p class="lead">
-        <a href="{{ site.url }}/about/" class="btn btn btn-pink fw-bold">Learn more</a>
+        <a href="{{ site.url }}/about/" class="">
+          <button class="outline white-pink">Learn more</button>
+        </a>
       </p>
 
       {%- include social.html -%}
@@ -78,15 +80,13 @@ layout: default
     <div class="pager">
       <ul class="pagination">
         {%- if paginator.previous_page %}
-        <li>
+        <li class="p-2 bd-highlight">
           <a href="{{ paginator.previous_page_path | relative_url }}" class="">
             <button type="submit" class="paginate-button outline">Previous Page</button>
           </a>
-
         {%- endif %}
-
         {%- if paginator.next_page %}
-        <li>
+        <li class="p-2 bd-highlight">
           <a href="{{ paginator.next_page_path | relative_url }}" class="">
             <button class="paginate-button outline">Next Page</button>
           </a>

@@ -29,8 +29,8 @@
 
         background-color: var(--bs-like-gray);
 
-        border-radius: 1rem 0 0 1rem;
-        margin: 1rem 0 1rem 0;
+        border-radius: 1rem 0 0 0;
+        margin: 1rem 0 0rem 0;
     }
 
     .offcanvas-body {
@@ -57,6 +57,51 @@
 .cover-container {
     margin: 1em 0 2em 0;
 
+
+    button {
+        cursor: pointer;
+        outline: none;
+          &.outline {
+              position: relative;
+              z-index: 3;
+              background: transparent;
+              color: var(--bs-greyple);
+              font-size: 14px;
+              border-color: var(--bs-greyple);
+              border-style: solid;
+              border-width: 2px;
+              border-radius: 5px;
+              padding: 10px 40px;
+              text-transform: uppercase;
+              transition: all 0.2s linear;
+              a {
+                  text-decoration: none;
+              }
+          }
+          &.outline:hover {
+              color: pink;
+              background: var(--bs-like-gray);
+              border-color: pink;
+              transition: all 0.2s linear;
+          }
+          &.outline:active {
+              border-radius: 5px;
+          }    &.white-pink {
+            font-weight: 700;
+            color: white;
+            border-color: pink;
+            background: transparent;
+            transition: all 0.2s ease-in-out;
+
+        }
+        &.white-pink:hover {
+            color: white;
+            background: pink;
+            border-color: pink;
+            transition: all 0.2s ease-in-out;
+
+        }
+        }
     .footerText {
         color: pink;
     }
@@ -135,10 +180,8 @@
 
 .pager {
     .pagination {
-        text-align: center;
-        font-size: large;
+        margin: auto;
     }
-
 
      button {
         cursor: pointer;
@@ -168,7 +211,17 @@
           }
           &.outline:active {
               border-radius: 5px;
-          }
+          }    &.white-blue {
+            font-weight: 700;
+            color: #00aeef;
+            border-color: white;
+            background: white;
+        }
+        &.white-blue:hover {
+            color: white;
+            background: #00aeef;
+            border-color: white;
+        }
         }
 }
 
