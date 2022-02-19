@@ -6,7 +6,7 @@ layout: default
   <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column text-center">
     <header class="mb-auto">
     </header>
-  
+
     <main class="px-3">
       <h1>Hello!</h1>
       <a href="https://gitlab.com/Whyherro1/personal-blog" data-bs-toggle="tooltip" title="This blog is open source!">
@@ -22,7 +22,7 @@ layout: default
       {%- include social.html -%}
 
     </main>
-  
+
     <footer class="mt-auto text-white-50">
       <p>DEVELOPER / <span class="footerText">DESIGNER</span> / DREAMER</p>
     </footer>
@@ -30,30 +30,31 @@ layout: default
 
   {{ content }}
 
+  
   {% if site.paginate %}
-    {% assign posts = paginator.posts %}
+  {% assign posts = paginator.posts %}
   {% else %}
-    {% assign posts = site.posts %}
+  {% assign posts = site.posts %}
   {% endif %}
 
 
   {%- if posts.size > 0 -%}
-    {%- if page.list_title -%}
-      <h2 class="post-list-heading">{{ page.list_title }}</h2>
-    {%- endif -%}
-      {%- assign date_format = site.bootstrap.date_format | default: "%b %-d, %Y" -%}
-      {%- for post in posts -%}
+  {%- if page.list_title -%}
+  <h2 class="post-list-heading">{{ page.list_title }}</h2>
+  {%- endif -%}
+  {%- assign date_format = site.bootstrap.date_format | default: "%b %-d, %Y" -%}
+  {%- for post in posts -%}
 
-      <div class="container">
-        <div class="row">
-          <div class="col-md">
-            <div onclick="location.href='{{ post.url | relative_url }}';" class="card" style="cursor: pointer;">
-              <div onclick="" class="card-body">
-                <div class="col-lg">
-                  <div class="card-img">
-                    <img src="{{ post.img }}" alt="" style="" class="img-fluid" >
-                  </div>
-                </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md">
+        <div onclick="location.href='{{ post.url | relative_url }}';" class="card" style="cursor: pointer;">
+          <div onclick="" class="card-body">
+            <div class="col-lg">
+              <div class="card-img">
+                <img src="{{ post.img }}" alt="" style="" class="img-fluid">
+              </div>
+            </div>
             <h3>
               <a class="card-title text-decoration-none" href="{{ post.url | relative_url }}">
                 {{ post.title | escape }}
@@ -61,34 +62,41 @@ layout: default
             </h3>
 
             {%- if site.excerpts.show -%}
-              {%- if site.excerpts.auto_truncate -%}{{ post.excerpt | truncatewords: 32 }}{%- else -%}{{ post.excerpt }}{%- endif -%}
-            {%- endif -%}  <br>
+            {%- if site.excerpts.auto_truncate -%}{{ post.excerpt | truncatewords: 32 }}{%- else -%}{{ post.excerpt }}{%- endif -%}
+            {%- endif -%} <br>
             <span class="post-meta text-muted">{{ post.date | date: date_format }}</span>
 
-              </div>
-            </div>
           </div>
         </div>
       </div>
-      {%- endfor -%}
+    </div>
+  </div>
+  {%- endfor -%}
 
-    {% if site.paginate %}
-      <div class="pager">
-        <ul class="pagination">
+  {% if site.paginate %}
+  <div class="d-flex justify-content-center">
+    <div class="pager">
+      <ul class="pagination">
         {%- if paginator.previous_page %}
-          <li><a href="{{ paginator.previous_page_path | relative_url }}" class="previous-page">{{ paginator.previous_page }}</a></li>
-        {%- else %}
-          <li><div class="pager-edge">•</div></li>
+        <li>
+          <a href="{{ paginator.previous_page_path | relative_url }}" class="">
+            <button type="submit" class="paginate-button outline">Previous Page</button>
+          </a>
+
         {%- endif %}
-          <li><div class="current-page">{{ paginator.page }}</div></li>
+
         {%- if paginator.next_page %}
-          <li><a href="{{ paginator.next_page_path | relative_url }}" class="next-page">{{ paginator.next_page }}</a></li>
-        {%- else %}
-          <li><div class="pager-edge">•</div></li>
+        <li>
+          <a href="{{ paginator.next_page_path | relative_url }}" class="">
+            <button class="paginate-button outline">Next Page</button>
+          </a>
+        </li>
+
         {%- endif %}
-        </ul>
-      </div>
-    {%- endif %}
+      </ul>
+    </div>
+  </div>
+  {%- endif %}
 
   {%- endif -%}
 

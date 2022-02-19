@@ -30,6 +30,7 @@
         background-color: var(--bs-like-gray);
 
         border-radius: 1rem 0 0 1rem;
+        margin: 1rem 0 1rem 0;
     }
 
     .offcanvas-body {
@@ -115,21 +116,13 @@
     }
 
     .card-img {
-        margin: 0, auto;
-        height: 250px;
-        height: auto;
-        border-radius: 1rem;
-        padding: 0;
-        position: relative;
         margin-bottom: 25px;
-        
             img {
-                max-width:100%;
-                max-height:250px;
+                box-shadow: 0 3px 26px 0 rgba($color: #000000, $alpha: .20);
+                max-width: 100%;
+                max-height: 250px;
                 width: 100%;
-                height: auto;
                 border-radius: 1rem;
-                display: block;
                 object-fit: cover;
                 aspect-ratio: 1 / 1;
             }
@@ -137,9 +130,61 @@
         
     &:hover {
         transform: scale(1.05);
-        box-shadow: 0 3px 26px 0 rgba($color: #000000, $alpha: .20);
     }
 }
+
+.pager {
+    .pagination {
+        text-align: center;
+        font-size: large;
+    }
+
+
+     button {
+        cursor: pointer;
+        outline: none;
+          &.outline {
+              position: relative;
+              z-index: 3;
+              background: transparent;
+              color: var(--bs-greyple);
+              font-size: 14px;
+              border-color: var(--bs-greyple);
+              border-style: solid;
+              border-width: 2px;
+              border-radius: 5px;
+              padding: 10px 40px;
+              text-transform: uppercase;
+              transition: all 0.2s linear;
+              a {
+                  text-decoration: none;
+              }
+          }
+          &.outline:hover {
+              color: pink;
+              background: var(--bs-like-gray);
+              border-color: pink;
+              transition: all 0.2s linear;
+          }
+          &.outline:active {
+              border-radius: 5px;
+          }
+        }
+}
+
+
+
+/* post page */
+
+.post-content {
+    line-height: 1.8rem;
+}
+
+
+
+
+
+/* Footer */
 
 .footer {
     background-color: var(--bs-not-quite-black);
@@ -151,5 +196,6 @@
 
     .rightSide {
         font-size: large;
+        direction: rtl;
     }
 }
