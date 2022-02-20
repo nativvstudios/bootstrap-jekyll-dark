@@ -131,6 +131,40 @@
     }
 }
 
+.modal {
+    .modal-content {
+        text-align: center;
+    }
+
+    .modal-header {
+        border-color: pink;
+        
+        .modal-title {
+            margin-left: 40px;
+        
+        }
+        .btn-close {
+            margin: 0;
+        }
+
+
+    }
+    .btn.btn-outline-primary  {
+        border-color: pink;
+        color: pink;
+    }
+
+    .btn.btn-outline-primary:hover {
+        background-color: pink;
+        color: white;
+    }
+
+
+    .modal-footer {
+        border-color: pink;
+    }
+}
+
 .post-list {
     margin: 0 auto;
 

@@ -8,6 +8,25 @@
     {%- include header.html -%}
 
     <main class="page-content py-5 flex-shrink-0" aria-label="Content">
+
+<!-- Modal -->
+      <div id="myModal" class="modal fade" tabindex="-1">
+        <div class="modal-dialog justify-content-center">
+            <div class="modal-content bg-dark">
+                <div class="modal-header text-center">
+                    <h4 class="modal-title w-100">Hey there!</h4> <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>For some reason, Github Pages doesn't want to display this site properly <br>
+                      To have a better viewing experience go to <a href="https://personal.nativvstudios.com">https://personal.nativvstudios.com</a> <br>
+                      Feel free to close this and view the theme on this page, Navigation and a few links are broken.
+                      <span class="badge bg-secondary">By <a href="https://nativvstudios.com"></a>Nativv Studios</span></p>
+                </div>
+                <div class="modal-footer"> <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">Close</button></div>
+            </div>
+        </div>
+      </div>
+
       <div class="container">
       {{ content }}
       </div>
