@@ -15,7 +15,7 @@ navigation:
 - text: Home
   url: "index.html"
 - text: About
-  url: "/about/"   
+  url: "/about/"
 
 excerpts:
   # Displays or hides post excerpts from home layout post listing.
